@@ -1,27 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Evans Family Reunion App</title>
-        <link rel="manifest" href="manifest.json"/>
-        <meta name="mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="application-name" content="Reunion"/>
-        <meta name="apple-mobile-web-app-title" content="Reunion"/>
-        <meta name="theme-color" content="#D08E76"/>
-        <meta name="msapplication-navbutton-color" content="#D08E76"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="msapplication-starturl" content="/"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
-        <link rel="icon" type="image/png" sizes="512x512" href="/reunion-icon.png"/>
-        <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/reunion-icon.png"/>
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -34,12 +15,12 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
+            <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
+            <h3>Learn &rarr;</h3>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
@@ -47,7 +28,7 @@ export default function Home() {
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
-            <h2>Examples &rarr;</h2>
+            <h3>Examples &rarr;</h3>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
@@ -55,7 +36,7 @@ export default function Home() {
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h3>Deploy &rarr;</h3>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
@@ -70,9 +51,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
