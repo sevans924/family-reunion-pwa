@@ -1,0 +1,16 @@
+{
+    "name": "Evans Family Reunion",
+    "short_name": "Reunion",
+    "description": "PWA for the Evans Family Reunion",
+    "lang": "en",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#D08E76",
+    "icons": [
+      {
+        "src": "/reunion-icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
